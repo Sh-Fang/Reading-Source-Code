@@ -10,7 +10,7 @@ matching::matching(Graph& query_graph, Graph& data_graph,
         bool print_prep,
         bool print_enum, 
         bool homo)
-: query_(query_graph)
+: query_(query_graph)  //初始化列表
 , data_(data_graph)
 
 , max_num_results_(max_num_results)
@@ -38,7 +38,7 @@ void matching::InitialMatching()
 
 void matching::AddEdge(uint v1, uint v2, uint label)
 {
-    data_.AddEdge(v1, v2, label);
+    data_.AddEdge(v1, v2, label);   //data_的定义是：Graph& data_;
 }
 
 void matching::RemoveEdge(uint v1, uint v2)

@@ -7,7 +7,7 @@
 #include "graph/graph.h"
 #include "matching/matching.h"
 
-class Graphflow : public matching
+class Graphflow : public matching  //公共继承自matching类
 {
 private:
     // a list of matching orders starting from each query edge

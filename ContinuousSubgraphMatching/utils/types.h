@@ -6,8 +6,8 @@
 #include <functional>
 #include <stdlib.h>
 
-#define NOT_EXIST UINT_MAX
-#define UNMATCHED UINT_MAX
+#define NOT_EXIST UINT_MAX  //定义NOT_EXIST的值为UINT_MAX
+#define UNMATCHED UINT_MAX  //定义UNMATCHED的值为UINT_MAX
 
 // Time counting
 #define Get_Time() std::chrono::high_resolution_clock::now()   //获取高精度时间
@@ -16,7 +16,7 @@
 #define Print_Time(str, start) std::cout << str << Duration(start) << \
     "ms" << std::endl
 
-typedef unsigned int uint;
+typedef unsigned int uint;  //增加：原文中缺少uint的定义，此处添加
 
 struct InsertUnit {
     char type;  // 'v' or 'e' 
